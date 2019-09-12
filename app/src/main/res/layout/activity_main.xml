@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+<de.hdodenhof.circleimageview.CircleImageView
+    android:layout_width="150dp"
+    android:layout_height="150dp"
+    android:id="@+id/image"
+    android:src="@drawable/ic_photo_size_select_actual_black_24dp"
+    app:civ_border_width="4dp"
+    android:layout_centerHorizontal="true"
+    app:civ_border_color="@color/colorPrimaryDark"/>
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Heading"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/image"
+        android:id="@+id/dhead"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Detail"
+        android:id="@+id/ddetail"
+        android:layout_below="@id/dhead"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Date"
+        android:textSize="19dp"
+        android:id="@+id/ddate"
+        android:textColor="@color/colorPrimaryDark"
+        android:paddingTop="15dp"
+        android:layout_below="@id/ddetail"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Venue"
+        android:id="@+id/dvenue"
+        android:layout_below="@id/ddate" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Link"
+        android:id="@+id/dlink"
+        android:layout_below="@id/dvenue"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="37dp"
+        android:text="save"
+        android:layout_below="@id/dlink"
+        android:gravity="center_horizontal"
+        android:id="@+id/btn"/>
+
+
+
+
+</RelativeLayout>
